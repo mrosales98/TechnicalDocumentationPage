@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meat charset="UTF-8"/>
+    <meta name="viewport" content= "width=device-width, initial-scal=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link"href="#Getting_Started_with_Python">Getting Started with Python</a></li>
+        <li><a class="nav-link"href="#Python_Entry_Point">Python Entry Point</a></li>
+        <li><a class="nav-link"href="#Printing_to_the_Console">Printing to the Console</a></li>
+        <li><a class="nav-link"href="#Declaring_Functions">Declaring Functions</a></li>
+        <li><a class="nav-link"href="#Object_Oriented_Programming">Object Oriented Programming</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class= "main-section" id="Getting_Started_with_Python">
+        <header>Getting Started with Python</header>
+        <p>Steps in getting started</p>
+        <ol>
+          <li>Download Python</li>
+          <li>Get an Integrated Development Environment (IDE)</li>
+          <li>Start a project within the IDE</li>
+          <li>Code up "Hello World" and run the code</li>
+          <li>Begin your Python journey</li>
+        </ol>
+      </section>
+      <section class= "main-section" id="Python_Entry_Point">
+        <header>Python Entry Point</header>
+        <p>In python, an entry point can be thought of as an explicit function that gets called when the script is run directly from the console.</p>
+        <p>Defining an entry point requires some boilerplate code, which is abstracted away by this library.</p>
+        <pre>
+          <code>
+            $ git clone https://github.com/nekitdev/entrypoint.git
+$ cd entrypoint
+$ python -m pip install .
+</code>
+        </pre>
+        <p>The above code is how you add the library directly from the source</p>
+        <p>You can also add it using "pip", as seen below</p>
+        <pre>
+          <code>
+            $ pip install entrypoint
+          </code>
+        </pre>
+      </section>
+      <section class= "main-section" id="Printing_to_the_Console">
+        <header>Printing to the Console</header>
+        <p>You can display program data to the console in Python with print(). </p>
+        <p>To display objects to the console, pass them as a comma-separated list of arguments to print(). </p>
+        <pre>
+          <code>
+>>> first_name = "Jane"
+>>> last_name = "Doe"
+
+>>> print("Name:", first_name, last_name)
+Name: Jane Doe
+          </code>
+        </pre>
+        <p>In the example above, we printed out the name Jane Doe using comma-separated list of arguments.</p>
+      </section>
+      <section class= "main-section" id="Declaring_Functions">
+        <header>Declaring Functions</header>
+        <p>A function is a block of code which only runs when it is called.</p>
+        <p>You can pass data, known as parameters, into a function.</p>
+        <p>A function can return data as a result.</p>
+        <pre>
+          <code>
+            def my_function():
+  print("Hello from a function")
+          </code>
+        </pre>
+        <p>In Python a function is defined using the def keyword</p>
+      </section>
+      <section class= "main-section" id="Object_Oriented_Programming">
+        <header>Object Oriented Programming</header>
+        <p>Object-oriented programming is a programming paradigm that provides a means of structuring programs so that properties and behaviors are bundled into individual objects.</p>
+        <p>In simpler terms, object-oriented programming is an approach for modeling concrete, real-world things, like cars, as well as relations between things, like companies and employees or students and teachers.</p>
+        <pre>
+          <code>
+            class Employee:
+    def __init__(self, name, age):
+        self.name =  name
+        self.age = age
+          </code>
+        </pre>
+        <p>In Python, you define a class by using the class keyword followed by a name and a colon. Then you use .__init__() to declare which attributes each instance of the class should have</p>
+      </section>
+      <footer>
+        <p>Documentation provided by Mariana Rosales</p>
+      </footer>
+    </main>
+  </body>
+</html>
